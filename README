@@ -1,0 +1,7 @@
+Herd
+
+The Herd software is a distributed messaging application.  It was built for Cornell CS5412 class.  However, the purpose was to build something that might be useful to others.  If it is, please make sure you attribute.  And I'd love to receive patches and or know about it.  Although that's obviously not strictly required.  The software is being released under the Apache License Version 2.0.  
+
+There are really three components.  Two of which are fully added in.  A Herd Management cluster, which is a DHT that uses on the gevent_dht project.  The assumption is that there be one or more IPs that are known to the other nodes in the DHT and to the other nodes in the system for bootstrapping.  The Herd Management cluster keeps track of which nodes in the other parts of the system have pinged in recently.  
+
+The second component, Herd Messaging Cluster is where the messages are swapped.  Think of this software as a cross between twitter and IM.  You can subscribe to different groups.  And everyone in that group will see all of the other messages in the group too.  Like IM, you only see the messages while you are online and following the group.  The messages are not persistent.  It uses the project elastica as a basis for this part, which utilizes gossip protocol to swap the messages for the group.

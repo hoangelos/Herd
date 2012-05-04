@@ -1,0 +1,29 @@
+Poster:
+
+1. Project Overview
+
+2. Project Architecture
+
+3. Design Decisions
+
+4. Test Suite
+
+5. Coverage
+
+6. Documentation
+
+7. Client Connects to Join Group
+
+8. No one yet in group
+
+9. Another in group
+
+10. DHT member dies
+
+11. Another Gossiper dies
+
+12. Member Removes from Group
+
+13. Members adds a new group
+
+14. Q/A

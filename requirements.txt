@@ -1,0 +1,8 @@
+Tornado==2.2
+config
+coverage
+mock
+nose
+-e git+git@github.com:hoangelos/elastica.git#egg=elastica
+-e git+git@github.com:hoangelos/gevent-dht.git#egg=gevent-dht
+wsgiref
